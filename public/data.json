@@ -1,0 +1,200 @@
+[
+  {
+    "id": "react",
+    "name": "React",
+    "category": "Frontend",
+    "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
+    "icon": "https://icon.icepanel.io/Technology/svg/React.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Popular",
+    "badgeColor": "badge-info"
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "category": "Frontend",
+    "description": "A React framework for building fast, SEO-friendly full-stack web applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Next.js.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Fullstack",
+    "badgeColor": "badge-neutral"
+  },
+  {
+    "id": "tailwindcss",
+    "name": "Tailwind CSS",
+    "category": "Styling",
+    "description": "A utility-first CSS framework for rapidly building custom user interfaces.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Essential",
+    "badgeColor": "badge-accent"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "category": "Language",
+    "description": "A strongly typed programming language built on top of JavaScript.",
+    "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Essential",
+    "badgeColor": "badge-primary"
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "category": "Language",
+    "description": "The core programming language used to build interactive web applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
+    "rating": 5.0,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Core",
+    "badgeColor": "badge-warning"
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "category": "Backend",
+    "description": "A JavaScript runtime for building scalable server-side applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Node.js.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Fast",
+    "badgeColor": "badge-success"
+  },
+  {
+    "id": "express",
+    "name": "Express.js",
+    "category": "Backend",
+    "description": "A minimal and flexible Node.js framework for building APIs and web servers.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Express.svg",
+    "rating": 4.7,
+    "difficulty": "Beginner-Friendly",
+    "badge": "API",
+    "badgeColor": "badge-neutral"
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "category": "Database",
+    "description": "A popular NoSQL document database designed for modern applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/MongoDB.svg",
+    "rating": 4.8,
+    "difficulty": "Beginner-Friendly",
+    "badge": "NoSQL",
+    "badgeColor": "badge-success"
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "category": "Database",
+    "description": "A powerful open-source relational database with advanced SQL support.",
+    "icon": "https://icon.icepanel.io/Technology/svg/PostgresSQL.svg",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Top SQL",
+    "badgeColor": "badge-info"
+  },
+  {
+    "id": "firebase",
+    "name": "Firebase",
+    "category": "Backend",
+    "description": "A backend platform providing authentication, hosting, database, and cloud services.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Firebase.svg",
+    "rating": 4.7,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Backend-as-a-Service",
+    "badgeColor": "badge-warning"
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "category": "DevOps",
+    "description": "A platform for packaging and running applications inside lightweight containers.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Docker.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Containers",
+    "badgeColor": "badge-info"
+  },
+  {
+    "id": "git",
+    "name": "Git",
+    "category": "Tools",
+    "description": "A distributed version control system used to track code changes and collaborate.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Git.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Version Control",
+    "badgeColor": "badge-error"
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "category": "Tools",
+    "description": "A cloud platform for hosting Git repositories and collaborating on software projects.",
+    "icon": "https://icon.icepanel.io/Technology/svg/GitHub.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Collaboration",
+    "badgeColor": "badge-neutral"
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "category": "Tools",
+    "description": "A collaborative interface design and prototyping tool used by developers and designers.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Figma.svg",
+    "rating": 4.8,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Design",
+    "badgeColor": "badge-secondary"
+  },
+  {
+    "id": "vite",
+    "name": "Vite",
+    "category": "Tools",
+    "description": "A fast frontend build tool and development server for modern JavaScript projects.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Vite.js.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Lightning Fast",
+    "badgeColor": "badge-warning"
+  },
+  {
+    "id": "redux",
+    "name": "Redux Toolkit",
+    "category": "Frontend",
+    "description": "The official, simplified way to manage global state in React applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Redux.svg",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "State Management",
+    "badgeColor": "badge-secondary"
+  },
+  {
+    "id": "prisma",
+    "name": "Prisma",
+    "category": "Database",
+    "description": "A modern ORM for Node.js and TypeScript that simplifies database access.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Prisma.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "ORM",
+    "badgeColor": "badge-primary"
+  },
+  {
+    "id": "vercel",
+    "name": "Vercel",
+    "category": "DevOps",
+    "description": "A cloud platform for deploying frontend applications with automatic CI/CD.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Vercel.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Deployment",
+    "badgeColor": "badge-neutral"
+  }
+]

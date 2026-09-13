@@ -1,42 +1,54 @@
-    import { use, type Dispatch, type SetStateAction } from "react"
+import {  type Dispatch, type SetStateAction } from "react";
 import type { devStackType } from "../../type/type"
+import { toast } from "react-toastify";
 
-import TechnologyCard from "./TechnologyCard";
-import SelectedCard from "./SelectedCard";
-
-export interface TechnologyProps {
-    promiseData: Promise<devStackType[]>,
+export interface TechProps {
+    tech: devStackType;
     selectedTech: devStackType[],
-    setSelectedTech:Dispatch<SetStateAction<devStackType[]>>
+    setSelectedTech: Dispatch<SetStateAction<devStackType[]>>
 }
 
-export default function Technologies({ promiseData,selectedTech,setSelectedTech }: TechnologyProps) {
-    const technology = use(promiseData)
-    
+export default function TechnologyCard({ tech, selectedTech, setSelectedTech }: TechProps) {
 
+
+    const addTOStack = selectedTech.some(
+    item => item.id === tech.id
+);
+
+    const handleAddToStack = () => {
+
+        if (addTOStack) {
+            toast.warning(`${tech.name} is already in your stack!`);
+            return};
+
+        setSelectedTech(prev => [...prev,tech]);
+        toast.success(`${tech.name} added to your stack!`);
+    };
 
     return (
         <>
-            <section className="container mx-auto pb-20 ">
-                <h2 className="text-center md:text-start text-[24px] md:text-[36px] font-extrabold font-inter">Explore the <span className="bg-linear-to-r from-[#EC4899] via-[#BC52C7] to-[#8B5CF6] bg-clip-text text-transparent">Technologies</span></h2>
-                <p className="text-center md:text-start text-[#64748B] text-[12px] md:text-[16px]  pb-8 font-jakarta">Pick one technology per category to build your ideal stack.</p>
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-1">
-                    {/* Div of 75% */}
-                    <div className="grid md:grid-cols-3 md:col-span-3 gap-4 mx-4">
-                        {technology.map((tech) => (
-                            <TechnologyCard key={tech.id} tech={tech} selectedTech={selectedTech} setSelectedTech={setSelectedTech}></TechnologyCard>
-                        ))}
+            <section className=" p-10 outline-[#F1F5F9] outline-1 rounded-xl ">
+                <div className="flex justify-between items-center py-2">
+                    <div className="flex gap-2">
+                        <img className="w-10 h-10" src={tech.icon} alt="" />
+                    <h2 className="text-[#0F172A] block md:hidden text-[18px] font-jakarta font-bold py-2">{tech.name}</h2>
                     </div>
-
-                    {/* Div of 25% */}
-                    <div className="flex justify-center md:justify-center  items-center md:items-start ">
-                        <div className="flex text-center md:text-start justify-center md:col-span-1 ">
-                        <SelectedCard  selectedTech={selectedTech} setSelectedTech={setSelectedTech}></SelectedCard>
-                    </div>
-                    </div>
+                    <div className={`badge badge-soft  ${tech.badgeColor}`}>{tech.badge}</div>
                 </div>
-            </section>
+                <div className="flex flex-col">
+                    <h2 className="text-[#0F172A] hidden md:block text-[18px] font-jakarta font-bold py-2">{tech.name}</h2>
+                    <p className="text-[#64748B] text-[12px]  max-h-[20%] ">{tech.description}</p>
+                </div>
+                <div className="flex justify-between py-4">
+                    <p className="text-[#64748B]">{tech.category}</p>
+                    <p className="text-[#64748B]">{tech.difficulty}</p>
+                    <p className="text-[#334155]">⭐{tech.rating}</p>
+                </div>
 
+                <button onClick={handleAddToStack}   className={`btn rounded-xl  w-full  ${addTOStack ? "btn-success text-white opacity-70 cursor-not-allowed"
+            : "bg-black text-white hover:bg-gray-800"}`} >{addTOStack ? "✓ Added to Stack" : "Add to Stack"}</button>
+
+            </section>
         </>
     )
 }
